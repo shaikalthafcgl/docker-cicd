@@ -1,0 +1,18 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: k8s-deploy
+spec:
+   replicas: 4
+   selector: 
+       matchLabels:
+            app: front-end
+   template:
+       metadata:
+           labels:
+              app: front-end
+       spec:
+         containers:
+             - name: ctr1
+               image: sandeepbinaylal/demo-node-project:2
