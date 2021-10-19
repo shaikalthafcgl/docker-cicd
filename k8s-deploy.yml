@@ -15,4 +15,17 @@ spec:
        spec:
          containers:
              - name: ctr1
-               image: sandeepbinaylal/demo-node-project:2
+               image: sandeepbinaylal/k8s-jenkins-demo:1
+---
+apiVersion: v1
+kind: Service
+metadata:
+   name: np-service
+spec:
+   selector:
+       app: front-end
+   type: NodePort
+   ports:
+     - port: 8888
+       targetPort: 8888
+       nodePort: 30005
