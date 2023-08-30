@@ -31,12 +31,12 @@ Clone this repository to your local machine:
 git clone https://github.com/shaikalthafcgl/docker-cicd.git
 cd docker-cicd
 
-Creating a Dockerfile
+**Creating a Dockerfile**
 A Dockerfile is a script that contains instructions to build a Docker image. In this repository, we have provided an example Dockerfile for a basic application. You can customize the Dockerfile according to your application's needs.
 
 Modify the Dockerfile in this repository according to your application's requirements.
 
-Building Docker Images
+**Building Docker Images**
 To build a Docker image from your Dockerfile, use the following command:
 
 bash
